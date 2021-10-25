@@ -1,0 +1,32 @@
+:root {
+	--clr1: black;
+	--clr2: white;
+	--clr3: #F93B39;
+	--clr6: #FFF0F0;
+	
+	--clr4: #CDCDCD;
+	--clr5: #F6F6F6;
+	--clr7: #c12724;
+	
+	--fclr1: var(--clr1);
+	--fclr2: var(--clr2);
+	--fclr3: var(--clr3);
+	
+	--gap1: 8px;
+	--gap2: 16px;
+	--gap3: 24px;
+	--gap4: 32px;
+	--gap5: 40px;
+
+	--mobileWidth: 720px;
+	--mobileWidth2: 1200px;
+
+	--mobileMenuWidth: 300px;
+	--headerHeight: 70px;
+
+	--animTime1: 200ms;
+
+	--brad1: 8px;
+
+	--shad1: 0 0 8px rgba(0, 0, 0, 0.25);
+}
