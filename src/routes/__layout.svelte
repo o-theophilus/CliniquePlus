@@ -5,7 +5,7 @@
 	import { showNav, isMobile } from '$lib/store.js';
 
 	let innerWidth;
-	$: $isMobile = innerWidth < 900;
+	$: $isMobile = innerWidth < 800;
 	// $: $showNav = !$isMobile ? false : $showNav;
 </script>
 

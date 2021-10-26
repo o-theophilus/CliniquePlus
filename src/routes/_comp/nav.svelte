@@ -150,7 +150,7 @@
 
 		box-shadow: var(--shad1);
 	}
-	@media screen and (min-width: 900px) {
+	@media screen and (min-width: 800px) {
 		nav {
 			position: static;
 			width: 350px;
