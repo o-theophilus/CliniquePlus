@@ -43,7 +43,7 @@
 
 		position: absolute;
 		z-index: 1;
-		width: 200px;
+		/* width: 500px; */
 
 		box-shadow: var(--shad1);
 
