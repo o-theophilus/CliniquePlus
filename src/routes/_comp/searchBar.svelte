@@ -79,6 +79,7 @@
 	}
 	
 	.titleNav{
+		width: 100%;
 		display: none;
 		padding: 0 var(--gap2);
 		

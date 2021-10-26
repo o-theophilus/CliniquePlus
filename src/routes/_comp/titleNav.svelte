@@ -16,23 +16,20 @@
 		<SVG type="expand" size="16" />
 	</div>
 	<div
-		class="btn"
+		class="profile"
 		on:click={() => {
 			$showProfileMenu = !$showProfileMenu;
 		}}
 	>
-		<img src="/images/pic.png" alt="logo" />
-	</div>
+		<div class="btn">
+			<img src="/images/pic.png" alt="logo" />
+		</div>
 
-	<div
-		class="profile_extra"
-		on:click={() => {
-			$showProfileMenu = !$showProfileMenu;
-		}}
-	>
-		<div>Samson Monday</div>
-		<div class="btn" class:showProfileMenu={$showProfileMenu}>
-			<SVG type="angle" size="16" />
+		<div class="profile_extra">
+			<div class="username">Samson Monday</div>
+			<div class="btn" class:showProfileMenu={$showProfileMenu}>
+				<SVG type="angle" size="16" />
+			</div>
 		</div>
 	</div>
 
@@ -76,14 +73,22 @@
 		height: var(--size);
 	}
 
+	.profile {
+		display: flex;
+		align-items: center;
+		gap: var(--gap1);
+	}
+
 	.profile_extra {
 		display: none;
 		align-items: center;
 		gap: var(--gap1);
 
 		font-weight: 700;
-		
-		cursor: pointer;
+	}
+
+	.username {
+		flex-shrink: 0;
 	}
 	@media screen and (min-width: 800px) {
 		.profile_extra {
