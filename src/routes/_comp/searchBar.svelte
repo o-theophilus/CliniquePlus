@@ -42,8 +42,6 @@
 		background: var(--clr5);
 
 		border: 1px solid var(--clr4);
-
-		cursor: pointer;
 	}
 	.btn:hover {
 		background: var(--clr3);

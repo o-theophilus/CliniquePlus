@@ -10,25 +10,25 @@
 		$showProfileMenu = false;
 	}}
 >
-	<div class="link">
+	<div class="btn">
 		<div class="svg">
 			<SVG type="close" size="16" />
 		</div>
 		Profile Update & Manager
 	</div>
-	<div class="link">
+	<div class="btn">
 		<div class="svg">
 			<SVG type="close" size="16" />
 		</div>
 		Help & Support Contact & FAQ
 	</div>
-	<div class="link">
+	<div class="btn">
 		<div class="svg">
 			<SVG type="close" size="16" />
 		</div>
 		Complaint Report Error
 	</div>
-	<div class="logout">
+	<div class="btn logout">
 		<div>
 			<SVG type="logout" size="16" />
 		</div>
@@ -57,16 +57,26 @@
 		display: block;
 	}
 
-	.link {
+	.btn {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: var(--gap2);
 
 		padding: var(--gap1) var(--gap2);
 		background: var(--clr2);
 	}
-	.link:hover {
+	.btn:hover {
 		background: var(--clr6);
+	}
+	.logout {
+		color: var(--clr2);
+		background: var(--clr3);
+		fill: var(--clr2);
+	}
+
+	.logout:hover {
+		background: var(--clr7);
 	}
 
 	.svg {
@@ -84,27 +94,5 @@
 		height: var(--size);
 
 		fill: var(--clr3);
-	}
-
-	.logout {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: var(--gap2);
-
-		padding: var(--gap1) var(--gap2);
-
-		color: var(--clr2);
-		background: var(--clr3);
-		fill: var(--clr2);
-	}
-
-	.logout:hover {
-		background: var(--clr7);
-	}
-
-	.link,
-	.logout {
-		cursor: pointer;
 	}
 </style>

@@ -6,7 +6,7 @@
 </script>
 
 <header>
-	<div class="logo">
+	<div class="logo link">
 		<img src="/images/logo.png" alt="logo" />
 		CliniqePlus
 	</div>
@@ -53,10 +53,8 @@
 		align-items: center;
 		gap: var(--gap2);
 
-		font-weight: bold;
-		font-size: 1.2em;
-
-		cursor: pointer;
+		font-weight: 900;
+		font-size: 1.3rem;
 	}
 	img {
 		border-radius: 50%;
@@ -80,8 +78,6 @@
 
 		width: var(--size);
 		height: var(--size);
-
-		cursor: pointer;
 	}
 	.btn:hover {
 		background-color: var(--clr6);

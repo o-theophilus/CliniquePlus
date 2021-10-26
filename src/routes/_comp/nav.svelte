@@ -16,7 +16,7 @@
 
 <nav class:showNav={$showNav}>
 	<div class="bar">
-		<div class="close" on:click={nav}>
+		<div class="btn close" on:click={nav}>
 			<SVG type="close" size="16" />
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 			</div>
 		</div>
 
-		<div class="item" on:click={nav2}>
+		<div class="item link" on:click={nav2}>
 			<div class="left">
 				<div class="svg">
 					<SVG type="close" size="16" />
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 
-		<div class="item" on:click={nav2}>
+		<div class="item link" on:click={nav2}>
 			<div class="left">
 				<div class="svg">
 					<SVG type="close" size="16" />
@@ -68,7 +68,7 @@
 			</div>
 		</div>
 
-		<div class="item" on:click={nav2}>
+		<div class="item link" on:click={nav2}>
 			<div class="left">
 				<div class="svg">
 					<SVG type="close" size="16" />
@@ -80,7 +80,7 @@
 				<SVG type="angle" size="16" />
 			</div>
 		</div>
-		<div class="item" on:click={nav2}>
+		<div class="item link" on:click={nav2}>
 			<div class="left">
 				<div class="svg">
 					<SVG type="close" size="16" />
@@ -92,7 +92,7 @@
 				<SVG type="angle" size="16" />
 			</div>
 		</div>
-		<div class="item" on:click={nav2}>
+		<div class="item link" on:click={nav2}>
 			<div class="left">
 				<div class="svg">
 					<SVG type="close" size="16" />
@@ -104,7 +104,7 @@
 				<SVG type="angle" size="16" />
 			</div>
 		</div>
-		<div class="item" on:click={nav}>
+		<div class="item link" on:click={nav}>
 			<div class="left">
 				<div class="svg">
 					<SVG type="close" size="16" />
@@ -161,7 +161,6 @@
 		height: var(--size);
 		padding: var(--gap2);
 
-		cursor: pointer;
 		border-radius: 50%;
 	}
 
@@ -177,8 +176,8 @@
 
 		padding: var(--gap2);
 
-		font-weight: bold;
-		font-size: 1.2em;
+		font-weight: 900;
+		font-size: 1.3rem;
 	}
 	img {
 		border-radius: 50%;
@@ -193,7 +192,6 @@
 		width: 100%;
 		padding: var(--gap2);
 
-		cursor: pointer;
 		border-radius: var(--brad1);
 	}
 

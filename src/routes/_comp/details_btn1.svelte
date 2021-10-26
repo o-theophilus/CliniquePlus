@@ -16,6 +16,8 @@
 
 		padding: var(--gap2);
 		width: 100%;
+
+		overflow-x: auto;
 	}
 	button {
 		height: var(--height);

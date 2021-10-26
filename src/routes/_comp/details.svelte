@@ -1,20 +1,18 @@
 <script>
 	import B1 from './details_btn1.svelte';
 	import B2 from './details_btn2.svelte';
-
-	var isMobile = true;
 </script>
 
 <section>
 	<div class="block">
 		<div class="a">HR / Staff Profile</div>
 		<div class="hr" />
-		{#if isMobile}
+		<div class="mobile">
 			<B2 />
-		{:else}
+		</div>
+		<div class="desktop">
 			<B1 />
-		{/if}
-
+		</div>
 		<div class="hr" />
 		<div class="c">
 			<div>
@@ -65,6 +63,7 @@
 		align-items: center;
 
 		padding: var(--gap2);
+
 	}
 
 	.block {
@@ -107,5 +106,17 @@
 		height: 1px;
 
 		background-color: var(--clr4);
+	}
+	.desktop {
+		display: none;
+	}
+
+	@media screen and (min-width: 900px) {
+		.mobile {
+			display: none;
+		}
+		.desktop {
+			display: unset;
+		}
 	}
 </style>
