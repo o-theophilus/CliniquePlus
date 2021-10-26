@@ -2,6 +2,7 @@
 	import { showNav } from '$lib/store.js';
 
 	import SVG from '$lib/svg.svelte';
+	import TitleNav from './titleNav.svelte';
 </script>
 
 <div class="bar">
@@ -18,13 +19,21 @@
 		<SVG type="search" size="16" />
 	</label>
 	<input type="text" placeholder="Search for patient" id="search" />
+
+	<div class="titleNav">
+		<TitleNav />
+	</div>
 </div>
 
 <style>
-	div {
-		position: relative;
+	.bar {
 		--size: 48px;
+		
+		position: relative;
+		
 		display: flex;
+		align-items: center;
+
 		padding: var(--gap2);
 		padding-bottom: 0;
 	}
@@ -35,9 +44,13 @@
 	}
 
 	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+
 		width: var(--size);
 		height: var(--size);
-		flex-shrink: 0;
 
 		background: var(--clr5);
 
@@ -51,17 +64,29 @@
 
 	input {
 		padding: 0px 24px 0 48px;
-
+		
 		position: static;
 		width: 100%;
 		height: var(--size);
-
+		
 		background: var(--clr5);
-
+		
 		border: 1px solid var(--clr4);
 	}
 	input:hover,
 	input:focus {
 		background: var(--clr2);
+	}
+	
+	.titleNav{
+		display: none;
+		padding: 0 var(--gap2);
+		
+	}
+	@media screen and (min-width: 800px) {
+		.titleNav{
+			display: block;
+			
+		}
 	}
 </style>
