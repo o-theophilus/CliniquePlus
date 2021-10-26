@@ -10,6 +10,7 @@
 		$showProfileMenu = false;
 	}}
 >
+	<div class="username">Samson Monday</div>
 	<div class="btn">
 		<div class="svg">
 			<SVG type="user" size="16" />
@@ -51,6 +52,7 @@
 
 		border-radius: var(--brad1);
 		overflow: hidden;
+		background: var(--clr2);
 	}
 
 	.showProfileMenu {
@@ -94,5 +96,16 @@
 		height: var(--size);
 
 		fill: var(--clr3);
+	}
+
+	.username {
+		padding: var(--gap1) var(--gap2);
+		text-align: center;
+		font-weight: 700;
+	}
+	@media screen and (min-width: 800px) {
+		.username {
+			display: none;
+		}
 	}
 </style>

@@ -81,6 +81,8 @@
 		align-items: center;
 		gap: var(--gap1);
 
+		font-weight: 700;
+		
 		cursor: pointer;
 	}
 	@media screen and (min-width: 800px) {
