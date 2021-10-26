@@ -12,19 +12,19 @@
 >
 	<div class="btn">
 		<div class="svg">
-			<SVG type="close" size="16" />
+			<SVG type="user" size="16" />
 		</div>
 		Profile Update & Manager
 	</div>
 	<div class="btn">
 		<div class="svg">
-			<SVG type="close" size="16" />
+			<SVG type="help" size="16" />
 		</div>
 		Help & Support Contact & FAQ
 	</div>
 	<div class="btn">
 		<div class="svg">
-			<SVG type="close" size="16" />
+			<SVG type="caution" size="16" />
 		</div>
 		Complaint Report Error
 	</div>

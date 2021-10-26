@@ -57,47 +57,35 @@
 
 <style>
 	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-
 		padding: var(--gap2);
-
 	}
 
 	.block {
 		width: 100%;
 		border-radius: var(--brad1);
-
+		
 		background-color: var(--clr2);
 		box-shadow: var(--shad1);
-
+		
 		overflow: hidden;
 	}
-
+	
 	.a {
 		padding: var(--gap2);
 	}
-
+	
 	.c {
 		padding: var(--gap2);
 	}
-
+	
 	.c div {
 		display: flex;
-		align-items: center;
+		justify-content: space-between;
 		gap: var(--gap2);
 
 		padding: var(--gap2);
 	}
 
-	.c div p {
-		width: 100%;
-	}
-	.c div p:nth-child(2) {
-		text-align: right;
-	}
 	.c div:nth-child(odd) {
 		background-color: var(--clr6);
 	}

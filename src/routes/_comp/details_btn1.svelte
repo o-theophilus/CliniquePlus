@@ -12,6 +12,7 @@
 		--height: 40px;
 
 		display: flex;
+		flex-wrap: wrap;
 		gap: var(--gap2);
 
 		padding: var(--gap2);

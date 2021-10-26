@@ -4,19 +4,22 @@
 	import SVG from '$lib/svg.svelte';
 
 	const nav = () => {
-		$showNav = !$showNav;
-	};
-
-	const nav2 = () => {
 		if ($isMobile) {
 			$showNav = !$showNav;
 		}
 	};
+
+	let showsub = true;
 </script>
 
 <nav class:showNav={$showNav}>
 	<div class="bar">
-		<div class="btn close" on:click={nav}>
+		<div
+			class="btn close"
+			on:click={() => {
+				$showNav = !$showNav;
+			}}
+		>
 			<SVG type="close" size="16" />
 		</div>
 	</div>
@@ -29,10 +32,10 @@
 	<div class="hr" />
 
 	<div class="navArea">
-		<div class="item active" on:click={nav2}>
+		<div class="item active" on:click={nav}>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="stack" size="16" />
 				</div>
 
 				Bed Status
@@ -42,10 +45,10 @@
 			</div>
 		</div>
 
-		<div class="item link" on:click={nav2}>
+		<div class="item link" on:click={nav}>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="portfolio" size="16" />
 				</div>
 
 				Front Office
@@ -55,10 +58,10 @@
 			</div>
 		</div>
 
-		<div class="item link" on:click={nav2}>
+		<div class="item link" on:click={nav}>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="stethoscope" size="16" />
 				</div>
 
 				HIS
@@ -68,10 +71,10 @@
 			</div>
 		</div>
 
-		<div class="item link" on:click={nav2}>
+		<div class="item link" on:click={nav}>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="drop" size="16" />
 				</div>
 
 				Blood Bank
@@ -80,22 +83,35 @@
 				<SVG type="angle" size="16" />
 			</div>
 		</div>
-		<div class="item link" on:click={nav2}>
+		<div
+			class="item link"
+			on:click={() => {
+				showsub = !showsub;
+			}}
+		>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="globe" size="16" />
 				</div>
 
 				LIS
 			</div>
-			<div class="right">
+			<div class="right" class:showsub>
 				<SVG type="angle" size="16" />
 			</div>
 		</div>
-		<div class="item link" on:click={nav2}>
+
+		<div class="sub" class:showsub>
+			<div class="sub_ent" on:click={nav}>Order</div>
+			<div class="sub_ent" on:click={nav}>QC</div>
+			<div class="sub_ent" on:click={nav}>Phleb</div>
+			<div class="sub_ent" on:click={nav}>Analysers</div>
+		</div>
+
+		<div class="item link" on:click={nav}>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="chat" size="16" />
 				</div>
 
 				RIS
@@ -107,7 +123,7 @@
 		<div class="item link" on:click={nav}>
 			<div class="left">
 				<div class="svg">
-					<SVG type="close" size="16" />
+					<SVG type="heart" size="16" />
 				</div>
 
 				Insurance
@@ -219,11 +235,29 @@
 	.right {
 		transform: rotate(90deg);
 	}
+	.right.showsub {
+		transform: rotate(180deg);
+	}
 	.hr {
 		width: 100%;
 		height: 1px;
 		margin: var(--gap2) 0;
 
 		background-color: var(--clr4);
+	}
+
+	.sub {
+		display: none;
+		padding-left: var(--gap5);
+	}
+	.showsub {
+		display: block;
+	}
+	.sub_ent {
+		padding: var(--gap2);
+		background-color: var(--clr5);
+	}
+	.sub_ent:hover {
+		background-color: var(--clr6);
 	}
 </style>

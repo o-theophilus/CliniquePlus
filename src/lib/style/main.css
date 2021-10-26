@@ -3,10 +3,10 @@
 	src: url('/font/JosefinSans-Regular.ttf');
 } */
 
-body, html{
-	width: 100vw;
-	/* overflow-x: hidden; */
-}
+/* body, html{
+	width: 100%;
+	overflow-x: hidden;
+} */
 
 body,
 input,

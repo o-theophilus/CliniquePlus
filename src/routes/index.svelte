@@ -27,12 +27,12 @@
 		position: relative;
 	}
 
+	.content {
+		display: flex;
+	}
 	.details {
 		width: 100%;
 	}
-	@media screen and (min-width: 900px) {
-		.content {
-			display: flex;
-		}
-	}
+	/* @media screen and (min-width: 900px) {
+	} */
 </style>
