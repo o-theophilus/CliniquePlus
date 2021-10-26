@@ -9,6 +9,7 @@
 } */
 
 body,
+textarea,
 input,
 button {
 	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
