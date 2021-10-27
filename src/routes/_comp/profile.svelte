@@ -96,7 +96,7 @@
 		background: var(--clr2);
 	}
 	.btn2:hover {
-		background: var(--clr5);
+		background: var(--clr6);
 	}
 
 	.c {
