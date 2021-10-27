@@ -37,6 +37,7 @@
 	}
 	.details {
 		width: 100%;
+		
 	}
 	/* @media screen and (min-width: 800px) {
 	} */

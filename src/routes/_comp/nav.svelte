@@ -178,6 +178,8 @@
 		padding: var(--gap2);
 
 		border-radius: 50%;
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 
 	.close:hover {
@@ -209,6 +211,8 @@
 		padding: var(--gap2);
 
 		border-radius: var(--brad1);
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 
 	.item:hover {
@@ -234,6 +238,8 @@
 	}
 	.right {
 		transform: rotate(90deg);
+
+		transition: all var(--animTime2) ease-in-out;
 	}
 	.right.showsub {
 		transform: rotate(180deg);
@@ -248,6 +254,7 @@
 
 	.sub {
 		display: none;
+
 	}
 	.showsub {
 		display: block;
@@ -256,8 +263,9 @@
 		padding: var(--gap2);
 		padding-left: var(--gap5);
 		background-color: var(--clr5);
-
+		
 		border-radius: var(--brad1);
+		transition: all var(--animTime1) ease-in-out;
 	}
 	.sub_ent:hover {
 		background-color: var(--clr6);

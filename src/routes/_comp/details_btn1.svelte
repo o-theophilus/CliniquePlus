@@ -2,7 +2,7 @@
 	<button class=" active">Profile</button>
 	<button>Payroll</button>
 	<button>Leave</button>
-	<button>Attendanc</button>
+	<button>Attendance</button>
 	<button>Document</button>
 	<button>Timeline</button>
 </div>
@@ -29,9 +29,19 @@
 		color: var(--clr1);
 		background: var(--clr2);
 		box-shadow: var(--shad1);
+
+		transition: all var(--animTime1) ease-in-out;
 	}
+
+	button:hover {
+		background: var(--clr6);
+	}
+
 	.active {
 		color: var(--clr2);
 		background: var(--clr3);
+	}
+	.active:hover {
+		background: var(--clr7);
 	}
 </style>

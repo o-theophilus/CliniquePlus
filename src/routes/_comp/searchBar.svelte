@@ -55,6 +55,8 @@
 		background: var(--clr5);
 
 		border: 1px solid var(--clr4);
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 	.btn:hover {
 		background: var(--clr3);
@@ -72,6 +74,8 @@
 		background: var(--clr5);
 
 		border: 1px solid var(--clr4);
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 	input:hover,
 	input:focus {

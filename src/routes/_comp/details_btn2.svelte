@@ -34,6 +34,8 @@
 		box-shadow: var(--shad1);
 		
 		transform: rotate(-90deg);
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 
 	.btn:hover{

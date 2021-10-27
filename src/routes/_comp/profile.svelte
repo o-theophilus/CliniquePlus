@@ -81,6 +81,8 @@
 
 		background: var(--clr3);
 		color: var(--clr2);
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 
 	button:hover {

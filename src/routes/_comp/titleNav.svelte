@@ -58,6 +58,8 @@
 		height: var(--size);
 
 		flex-shrink: 0;
+
+		transition: all var(--animTime1) ease-in-out;
 	}
 	.btn:hover {
 		background-color: var(--clr6);
@@ -99,6 +101,9 @@
 		}
 	}
 
+	.profile_extra .btn {
+		transition: all var(--animTime3) ease-in-out;
+	}
 	.profile_extra .showProfileMenu {
 		transform: rotate(180deg);
 	}
