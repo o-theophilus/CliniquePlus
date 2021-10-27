@@ -67,7 +67,7 @@
 		z-index: 1;
 	}
 	.user {
-		background-image: url('./images/pic.png');
+		background-image: url('/images/pic.png');
 		background-size: cover;
 	}
 
