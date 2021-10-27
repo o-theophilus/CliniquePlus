@@ -2,14 +2,20 @@
 	import { showProfileMenu } from '$lib/store.js';
 
 	import SVG from '$lib/svg.svelte';
+
+	const ddd = (e) => {
+		if (e.target.id != 'title_user_btn' && $showProfileMenu) {
+			$showProfileMenu = false;
+		}
+	};
 </script>
 
-<nav
-	class:showProfileMenu={$showProfileMenu}
-	on:click={() => {
-		$showProfileMenu = false;
-	}}
->
+<svelte:body
+	on:click={(e) => {
+		ddd(e);
+	}} />
+
+<nav class:showProfileMenu={$showProfileMenu}>
 	<div class="username">Samson Monday</div>
 	<div class="btn">
 		<div class="svg">

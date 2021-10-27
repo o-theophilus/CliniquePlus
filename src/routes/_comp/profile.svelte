@@ -1,7 +1,3 @@
-<script>
-	import SVG from '$lib/svg.svelte';
-</script>
-
 <section>
 	<div class="block">
 		<div class="a">
@@ -10,7 +6,7 @@
 		</div>
 		<div class="hr" />
 		<div class="b">
-			<button>Change Passwprd</button>
+			<button>Change Password</button>
 			<button class="btn2">Edit</button>
 		</div>
 		<div class="c">
@@ -87,20 +83,18 @@
 		color: var(--clr2);
 	}
 
-	button:hover{
-	background: var(--clr7);
-
+	button:hover {
+		background: var(--clr7);
 	}
 	.btn2 {
 		width: unset;
 		border: 1px solid var(--clr1);
-		
+
 		color: var(--clr1);
 		background: var(--clr2);
 	}
-	.btn2:hover{
-	background: var(--clr5);
-
+	.btn2:hover {
+		background: var(--clr5);
 	}
 
 	.c {

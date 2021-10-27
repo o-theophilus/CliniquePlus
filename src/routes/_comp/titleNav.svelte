@@ -17,13 +17,12 @@
 	</div>
 	<div
 		class="profile"
+		id="title_user_btn"
 		on:click={() => {
 			$showProfileMenu = !$showProfileMenu;
 		}}
 	>
-		<div class="btn">
-			<img src="/images/pic.png" alt="logo" />
-		</div>
+		<div class="btn user" />
 
 		<div class="profile_extra">
 			<div class="username">Samson Monday</div>
@@ -37,9 +36,6 @@
 </nav>
 
 <style>
-	img {
-		border-radius: 50%;
-	}
 	nav {
 		--size: 32px;
 
@@ -68,9 +64,9 @@
 		box-shadow: 0 0 2px 10px var(--clr6);
 		z-index: 1;
 	}
-	img {
-		width: var(--size);
-		height: var(--size);
+	.user {
+		background-image: url('./images/pic.png');
+		background-size: cover;
 	}
 
 	.profile {
@@ -78,6 +74,12 @@
 		display: flex;
 		align-items: center;
 		gap: var(--gap1);
+
+		cursor: pointer;
+	}
+
+	.profile * {
+		pointer-events: none;
 	}
 
 	.profile_extra {
