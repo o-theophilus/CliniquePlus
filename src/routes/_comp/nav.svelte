@@ -248,14 +248,16 @@
 
 	.sub {
 		display: none;
-		padding-left: var(--gap5);
 	}
 	.showsub {
 		display: block;
 	}
 	.sub_ent {
 		padding: var(--gap2);
+		padding-left: var(--gap5);
 		background-color: var(--clr5);
+
+		border-radius: var(--brad1);
 	}
 	.sub_ent:hover {
 		background-color: var(--clr6);

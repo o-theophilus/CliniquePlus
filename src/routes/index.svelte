@@ -7,6 +7,11 @@
 
 	import Nav from './_comp/nav.svelte';
 </script>
+	<svelte:head>
+		<title>
+			CliniquePlus
+		</title>
+	</svelte:head>
 
 <main>
 	<div class="content">

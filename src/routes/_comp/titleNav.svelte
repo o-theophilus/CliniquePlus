@@ -78,7 +78,6 @@
 		display: flex;
 		align-items: center;
 		gap: var(--gap1);
-
 	}
 
 	.profile_extra {
@@ -89,9 +88,9 @@
 		font-weight: 700;
 	}
 
-	/* .username {
-		flex-shrink: 0;
-	} */
+	.username {
+		font-size: 0.7rem;
+	}
 	@media screen and (min-width: 800px) {
 		.profile_extra {
 			display: flex;

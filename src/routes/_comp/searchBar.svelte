@@ -28,9 +28,9 @@
 <style>
 	.bar {
 		--size: 48px;
-		
+
 		position: relative;
-		
+
 		display: flex;
 		align-items: center;
 
@@ -64,29 +64,31 @@
 
 	input {
 		padding: 0px 24px 0 48px;
-		
+
 		position: static;
 		width: 100%;
 		height: var(--size);
-		
+
 		background: var(--clr5);
-		
+
 		border: 1px solid var(--clr4);
 	}
 	input:hover,
 	input:focus {
 		background: var(--clr2);
 	}
-	
-	.titleNav{
+
+	.titleNav {
 		display: none;
 		padding: 0 var(--gap2);
-		
+		border: 1px solid var(--clr4);
+		border-left: none;
+
+		height: var(--size);
 	}
 	@media screen and (min-width: 800px) {
-		.titleNav{
-			display: block;
-			
+		.titleNav {
+			display: flex;
 		}
 	}
 </style>
